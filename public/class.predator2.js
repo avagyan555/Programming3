@@ -4,7 +4,7 @@ class Gishatich2 {
         this.y = y;
         this.index = index;
         this.energy = Math.round(Math.random() * 16);
-        this.speed = 26;
+        this.speed = 24;
         this.multiply = Math.round(Math.random() * 16);
         matrix[this.y][this.x] = this.index;
         this.directions = [

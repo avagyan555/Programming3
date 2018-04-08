@@ -6,8 +6,8 @@ function genMatrix(w, h) {
             var r = random(100);
             if     (r < 20) r = 0;
             else if(r < 65) r = 1;
-            else if(r < 80) r = 2;
-            else if(r < 90) r = 3;
+            else if(r < 90) r = 2;
+            else if(r < 95) r = 3;
             else if(r < 100)r = 4;
             matrix[y][x] = r;
         }
@@ -87,5 +87,5 @@ function draw() {
         gishatich2Arr[i].bazmanal();
         gishatich2Arr[i].utel();
         gishatich2Arr[i].mahanal();
-    }
+    } 
 }
