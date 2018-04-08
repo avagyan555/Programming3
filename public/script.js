@@ -6,8 +6,9 @@ function genMatrix(w, h) {
             var r = random(100);
             if     (r < 20) r = 0;
             else if(r < 65) r = 1;
-            else if(r < 90) r = 2;
-            else if(r < 100)r = 3;
+            else if(r < 80) r = 2;
+            else if(r < 90) r = 3;
+            else if(r < 100)r = 4;
             matrix[y][x] = r;
         }
     }
@@ -18,7 +19,7 @@ var matrix;
 var w = 30;
 var h = 30;
 var side = 24;
-var grassArr = [], xotakerArr = [], gishatichArr = [];
+var grassArr = [], xotakerArr = [], gishatichArr = [], gishatich2Arr = [];
 
 function setup() {
     matrix = genMatrix(w, h);
@@ -36,9 +37,12 @@ function setup() {
             else if(matrix[y][x] == 3) {
                 gishatichArr.push(new Gishatich(x*1, y*1, 3))
             }
+            else if(matrix[y][x] == 4) {
+                gishatich2Arr.push(new Gishatich2(x*1, y*1, 4))
+            }
+            }
         }
     }
-}
 
 function draw() {
     background("#acacac");
@@ -55,6 +59,9 @@ function draw() {
             }
             else if(matrix[y][x] == 3) {
                 fill("red");
+            }
+            else if(matrix[y][x] == 4) {
+                fill("blue");
             }
             rect(x * side, y * side, side, side);
         }
@@ -76,4 +83,9 @@ function draw() {
         gishatichArr[i].mahanal();
     }
 
+    for(var i in gishatich2Arr) {
+        gishatich2Arr[i].bazmanal();
+        gishatich2Arr[i].utel();
+        gishatich2Arr[i].mahanal();
+    }
 }
