@@ -29,7 +29,7 @@ function setup() {
     for(var y in matrix) {
         for(var x in matrix[y]) {
             if(matrix[y][x] == 1) {
-                grassArr.push(new grass(x*1, y*1, 1));
+                grassArr.push(new Grass(x*1, y*1, 1));
             }
             else if(matrix[y][x] == 2) {
                 xotakerArr.push(new Xotaker(x*1, y*1, 2));
