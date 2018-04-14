@@ -19,7 +19,6 @@ class Grass extends livingCreature {
 }
 
     yntrelVandak(ch) {
-        this.stanalNorKordinatner();
         return super.yntrelvandak(ch);
     }
 
