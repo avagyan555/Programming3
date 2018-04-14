@@ -1,12 +1,10 @@
 class Gishatich2 {
     constructor(x, y, index) {
-        this.x = x;
-        this.y = y;
-        this.index = index;
-        this.energy = Math.round(Math.random() * 16);
-        this.speed = 24;
+        super(x,y, index);
+        this.energy = Math.round(Math.random() * 16;
         this.multiply = Math.round(Math.random() * 16);
-        matrix[this.y][this.x] = this.index;
+        this.speed = 24;
+        matrix[this.y][this.x] = this.index; 
         this.directions = [
             [this.x - 1, this.y - 1],
             [this.x, this.y - 1],
@@ -23,7 +21,7 @@ class Gishatich2 {
         this.stanalNorKordinatner();
         return super.yntrelvandak(ch);
     }
-    
+
     stanalNorKordinatner() {
         this.directions = [
             [this.x - 1, this.y - 1],
