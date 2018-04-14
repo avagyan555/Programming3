@@ -35,10 +35,10 @@ function setup() {
                 xotakerArr.push(new Xotaker(x*1, y*1, 2));
             }
             else if(matrix[y][x] == 3) {
-                gishatichArr.push(new Gishatich(x*1, y*1, 3))
+                gishatichArr.push(new Gishatich(x*1, y*1, 3));
             }
             else if(matrix[y][x] == 4) {
-                gishatich2Arr.push(new Gishatich2(x*1, y*1, 4))
+                gishatich2Arr.push(new Gishatich2(x*1, y*1, 4));
             }
             }
         }
