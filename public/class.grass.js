@@ -1,10 +1,10 @@
 class Grass extends livingCreature {
     constructor(x, y, index) {
-        super(x,y, index), directions;
+        super(x,y, index);
         this.multiply = Math.round(Math.random() * 8);
         this.speed = 8;
         matrix[this.y][this.x] = this.index;
-        /*this.directions = [
+        this.directions = [
             [this.x - 1, this.y - 1],
             [this.x, this.y - 1],
             [this.x + 1, this.y - 1],
@@ -14,10 +14,12 @@ class Grass extends livingCreature {
             [this.x, this.y + 1],
             [this.x + 1, this.y + 1]
         ];
-    }*/
-
     }
+
+}
+
     yntrelVandak(ch) {
         this.stanalNorKordinatner();
         return super.yntrelvandak(ch);
     }
+
