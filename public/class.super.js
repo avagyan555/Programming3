@@ -5,6 +5,16 @@ class livingCreature {
         this.energy = 8;
         this.multiply = 0;
         this.index = index;
+        this.directions = [
+            [this.x - 1, this.y - 1],
+            [this.x, this.y - 1],
+            [this.x + 1, this.y - 1],
+            [this.x - 1, this.y],
+            [this.x + 1, this.y],
+            [this.x - 1, this.y + 1],
+            [this.x, this.y + 1],
+            [this.x + 1, this.y + 1]
+        ];
     }
   yntrelvandak(ch) {
       var found = [];
