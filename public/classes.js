@@ -1,5 +1,5 @@
 class Grass {
-    constructor(x, y, index) {
+    constructor(x, y, index, directions) {
         this.x = x;
         this.y = y;
         this.index = index;

@@ -1,20 +1,10 @@
 class livingCreature {
-    constructor(x, y, index){
+    constructor(x, y, index) {
         this.x = x;
         this.y = y;
         this.energy = 8;
         this.multiply = 0;
         this.index = index;
-        this.directions = [
-           [this.x - 1, this.y - 1],
-           [this.x, this.y - 1],
-           [this.x + 1, this.y - 1],
-           [this.x - 1, this.y],
-           [this.x + 1, this.y],
-           [this.x - 1, this.y + 1],
-           [this.x, this.y + 1],
-           [this.x + 1, this.y + 1]
-        ];
     }
   yntrelvandak(ch) {
       var found = [];
@@ -29,4 +19,16 @@ class livingCreature {
         }
         return found;
     }
+
+    stanalNorKordinatner() {
+        this.directions = [
+            [this.x - 1, this.y - 1],
+            [this.x, this.y - 1],
+            [this.x + 1, this.y - 1],
+            [this.x - 1, this.y],
+            [this.x + 1, this.y],
+            [this.x - 1, this.y + 1],
+            [this.x, this.y + 1],
+            [this.x + 1, this.y + 1]
+        ];
 }
