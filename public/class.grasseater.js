@@ -1,4 +1,4 @@
-class Xotaker extends livingCreature {
+class Xotaker extends LivingCreature {
     constructor(x, y, index) {
         super(x, y, index);
         this.energy = Math.round(Math.random() * 8);

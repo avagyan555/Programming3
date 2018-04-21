@@ -1,6 +1,6 @@
-class Gishatich extends livingCreature {
+class Gishatich extends LivingCreature {
     constructor(x, y, index) {
-        livingCreature(x, y, index);
+        super(x, y, index);
         this.energy = Math.round(Math.random() * 16);
         this.multiply = Math.round(Math.random() * 16);
         this.speed = 24;
