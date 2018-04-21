@@ -67,7 +67,7 @@ function draw() {
         }
     }
 
-    for(var i in grassArr) {
+    /*for(var i in grassArr) {
         grassArr[i].mul();
     }
 
@@ -87,5 +87,5 @@ function draw() {
         gishatich2Arr[i].bazmanal();
         gishatich2Arr[i].utel();
         gishatich2Arr[i].mahanal();
-    } 
+    } */
 }
